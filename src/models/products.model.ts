@@ -6,4 +6,5 @@ export interface Products {
     extras: string[];
     image: string;
     badge: string;
+    price: string | number;
   }

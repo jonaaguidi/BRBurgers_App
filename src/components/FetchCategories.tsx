@@ -4,13 +4,13 @@ import { supabase } from '../lib/supabaseClient';
 import { Products } from '../models/products.model';
 import ProductCard from './ProductCard';
 
-const FetchData: React.FC = () => {
+const FetchCategories: React.FC = () => {
   const [products, setProducts] = useState<Products[]>([]);
 
   useEffect(() => {
     const fetchBurgers = async () => {
       const { data, error } = await supabase
-        .from('products')
+        .from('categories')
         .select('*');
       console.log(data)
 
@@ -33,4 +33,4 @@ const FetchData: React.FC = () => {
   );
 };
 
-export default FetchData;
+export default FetchCategories;
