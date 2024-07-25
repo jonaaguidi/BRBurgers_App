@@ -19,7 +19,7 @@ const LogoutButton: React.FC = () => {
   return (
     <button 
       onClick={handleLogout}
-      className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+      className="bg-red-500 max-w-[140px] hover:bg-red-700 text-white font-medium py-2 px-4 rounded-lg"
     >
       Cerrar Sesión
     </button>
